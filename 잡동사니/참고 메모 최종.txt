@@ -1,0 +1,35 @@
+
+
+package corecirculator;
+import java.util.Scanner;
+
+public class pra1 {
+
+	public static void main(String[] args) {
+		boolean run = true;		
+		int balance = 0;		
+		Scanner scanner = new Scanner(System.in);
+		
+		while(run) {
+			System.out.println("-------------");
+			System.out.println("분해할 코어의 레벨:");
+		
+			
+			int number = scanner.nextInt();
+			
+			if( 0<number && number<2) {
+				System.out.println("나오는 코어의 개수는 0개입니다");		
+			
+			} 
+			else if(2<=number && number<=10) {
+				System.out.println("나오는 코어의 개수는 여러개입니다");
+			}
+			else if(11<=number && number<=25){
+				System.out.println("나오는 코어의 개수는 다수입니다");
+			}
+			else {
+				System.out.println("잘콧입력했습니다. 다시하기를 눌러서 1~25의 수를 입력해주세요");
+			}
+		}
+	}
+}

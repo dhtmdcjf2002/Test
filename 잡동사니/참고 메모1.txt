@@ -1,0 +1,22 @@
+switch(number) {
+				case 1:
+					System.out.println("1개");
+					break;
+				case 2:
+					System.out.println("5개");
+					break;
+				case 3:
+					System.out.println("10개");
+					break;
+				case 4:
+					System.out.println("15개");
+					break;
+				case 5:
+					System.out.println("20개");
+					break;
+				case 6:
+					System.out.println("25개");
+					break;
+				case 7:
+					System.out.println("30개");
+					break;

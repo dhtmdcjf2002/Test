@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta nam="viewport" content="width=device-width, initial-scale=1">
+  <title>코젬 분해기</title>
+  <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+      <div class="title">
+        <div class="title-text">
+          <h1>코젬 분해기</h1>
+        </div>
+      </div>
+
+
+
+      <div class="main">
+        <div class="tabs" >
+
+          <div class="tab" data-tab-target="#tab1">
+            <p>강화코어</p>
+          </div>
+
+          <div class="tab" data-tab-target="#tab2">
+            <p>스킬코어</p>
+          </div>
+
+          <div class="tab" data-tab-target="#tab3">
+            <p>특수코어</p>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="content">
+
+        <div id="tab1" data-tab-content class="items active">
+          <h2>가지고 있는 강화코어의 레벨은?</h2>
+          
+          <div>
+            <button onclick="createDiv()"><img src="src/img/코젬.png" alt="" width="50px"></button>
+            <input id="op1" type="text" size="2" maxlength="2"/>
+          </div>
+
+          <div>
+            <input type="button" value="분해하기" onclick="item1();" />
+          </div>
+
+          <div class="speech-bubble" id="box1">
+            <div style="padding-top: 25px;">
+            강화코어 분해시 얻는 조각수: <input id="result" type="text" size="2" readonly /> <br />
+            얻은 조각으로 제작 가능한 코어 젬스톤: <input id="result2" type="text" size="2" readonly /> <br />
+            코어젬스톤을 제작하고 남은 조각수: <input id="result3" type="text" size="2" readonly />
+            </div>
+          </div>
+          
+        </div>
+
+
+        <div id="tab2" data-tab-content class="items">
+          <h2>가지고 있는 스킬코어의 레벨은?</h2>
+          <button onclick="createDiv()"><img src="src/img/경코젬.png" alt="" width="50px"></button>
+          <input id="op2" type="text" size="2" maxlength="2"/>
+          <div>
+          <input type="button" value="분해하기" onclick="item2();" />
+          </div>
+          <div class="speech-bubble" id="box2">
+            <div style="padding-top: 25px;">
+            스킬코어 분해시 얻는 조각수: <input id="result4" type="text" size="2" readonly /> <br />
+            얻은 조각으로 제작 가능한 코어 젬스톤: <input id="result5" type="text" size="2" readonly /> <br />
+            코어젬스톤을 제작하고 남은 조각수: <input id="result6" type="text" size="2" readonly />
+            </div>
+          </div>
+        </div>
+
+
+        <div id="tab3" data-tab-content class="items">
+          <div>
+            <h2>분해할려는 특수코어의 개수는?</h2>
+            <div style="text-align: center;">
+              <div style="text-align:center; margin-top: 20px;">
+              <img src="src/img/특수코어.jpg" alt="">
+              </div>
+              <input id="op3" type="text" size="2" maxlength="2"> 개 <br />
+              <input type="button" value="분해하기" onclick="item3();" />
+            </div>
+          </div>
+          <div class="speech-bubble" id="box3" style="position:relative; top:120px" >
+            <div style="padding: 25px">
+            특수코어 분해시 얻는 조각수: <input type="text" id="result7" size="2" readonly> <br />
+            얻은 조각으로 제작 가능한 코어 젬스톤: <input id="result8" type="text" size="2" readonly /> <br />
+            코어젬스톤을 제작하고 남은 조각수: <input id="result9" type="text" size="2" readonly /> <br />
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+
+      <script src="src/index.js"></script>
+
+      <footer>
+        <div class="ft-item1">
+          코젬분해기© Copyright 2022, All Rights Reserved <br />
+          인천광역시 부평구 부개로12 | 오상추(주) <br />
+          010-6415-4735, <a href="mailto:ohsangchu@naver.com">ohsangchu@naver.com</a> | version : 1.01 <br />
+        </div>
+
+        <div class="ft-item2">
+          <a href="https://blog.naver.com/ohsangchu"><img src="src/img/blog.png" width="36px"></a>
+          <a href="https://github.com/dhtmdcjf2002"><img src="src/img/github.png" width="36px" ></a>
+          <a href="https://www.instagram.com/ohsangchu/"><img src="src/img/instagram.png" width="36px"
+              height="36px"></a>
+        </div>
+
+      </footer>
+</body>
+</html>
