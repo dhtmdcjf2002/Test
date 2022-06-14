@@ -28,13 +28,12 @@ function item1() {
 
     document.getElementById("result3").value =
     ((parseInt(a) - 1) * (3 * parseInt(a) + 16) / 2 + 10) %35 ;
-
-  }else if('String'){
-    alert('1~25까지 올바른 레벨을 입력해주세요');
-
-    var input = document.getElementById("result");
-input.value = null;
+  }else if(a == String){
+    alert('숫자만 입력하세요.');
+  }else{
+    alert('1~25까지 올바른 레벨을 입력해주세요.');
   }
+  return;
 }
 
 function item2() {
@@ -56,9 +55,9 @@ function item2() {
   (parseInt(a) * 2 * (parseInt(a) + 19)) % 35 ;
 }else if('String'){
   alert('1~25까지 올바른 레벨을 입력해주세요');
-  var input = document.getElementById("result");
-input.value = null;
+
   }
+  return;
 }
 
 function item3() {
@@ -76,17 +75,18 @@ function item3() {
    Math.floor ((parseInt(a) * 50) / 35);
   document.getElementById("result9").value =
     parseInt(a) * 50 % 35;
-  }else{
-    alert('최대 20개까지 입력할 수 있습니다.');
+  }else if('String'){
+    alert('최대 20개까지 올바른 개수를 입력해주세요');
   }
-    
+  return;
 }
 
+/* 
 function createDiv() {
   const newDiv = document.createElement('div');
   const newText = document.createTextNode('안녕하세요');
   newDiv.appendChild(newText);
   document.body.appendChild(newDiv);
   create
-  
-}
+} 
+*/
