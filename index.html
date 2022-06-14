@@ -3,111 +3,131 @@
 
 <head>
   <meta charset='utf-8'>
-  <meta nam="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>코젬 분해기</title>
   <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-      <div class="title">
-        <div class="title-text">
+  <div class="wrap">
+    <!-- header  -->
+      <div class="header">
+
+        <div>
+
           <h1>코젬 분해기</h1>
+        
         </div>
+
       </div>
 
+    <!-- header  -->
 
 
-      <div class="main">
-        <div class="tabs" >
+    <!-- content -->
+    <div class="contents">
 
-          <div class="tab" data-tab-target="#tab1">
-            <p>강화코어</p>
-          </div>
+      <div class="tabs" >
 
-          <div class="tab" data-tab-target="#tab2">
-            <p>스킬코어</p>
-          </div>
-
-          <div class="tab" data-tab-target="#tab3">
-            <p>특수코어</p>
-          </div>
-
+        <div class="tab" data-tab-target="#tab1">
+          <p>강화코어</p>
         </div>
-      </div>
 
+        <div class="tab" data-tab-target="#tab2">
+          <p>스킬코어</p>
+        </div>
 
+        <div class="tab" data-tab-target="#tab3">
+          <p>특수코어</p>
+        </div>
+
+      </div>            
+      
       <div class="content">
 
         <div id="tab1" data-tab-content class="items active">
+
           <h2>가지고 있는 강화코어의 레벨은?</h2>
-          
+
           <div>
-            <button onclick="createDiv()"><img src="src/img/코젬.png" alt="" width="50px"></button>
+            <button onclick="createDiv()"><img src="src/img/코젬.png" alt=""></button>
             <input id="op1" type="text" size="2" maxlength="2"/>
           </div>
 
-          <div>
-            <input type="button" value="분해하기" onclick="item1();" />
+          <div style="text-align: center;">
+            <input type="button" value="분해하기" class="bt" onclick="item1();" />
           </div>
 
           <div class="speech-bubble" id="box1">
-            <div style="padding-top: 25px;">
-            강화코어 분해시 얻는 조각수: <input id="result" type="text" size="2" readonly /> <br />
-            얻은 조각으로 제작 가능한 코어 젬스톤: <input id="result2" type="text" size="2" readonly /> <br />
-            코어젬스톤을 제작하고 남은 조각수: <input id="result3" type="text" size="2" readonly />
+
+            <div>
+              강화코어 분해시 얻는 조각수: <input id="result" type="text" size="2" readonly /> <br />
+              얻은 조각으로 제작 가능한 코어 젬스톤: <input id="result2" type="text" size="2" readonly /> <br />
+              코어젬스톤을 제작하고 남은 조각수: <input id="result3" type="text" size="2" readonly />
             </div>
+
           </div>
-          
+                  
         </div>
 
 
         <div id="tab2" data-tab-content class="items">
+
           <h2>가지고 있는 스킬코어의 레벨은?</h2>
-          <button onclick="createDiv()"><img src="src/img/경코젬.png" alt="" width="50px"></button>
-          <input id="op2" type="text" size="2" maxlength="2"/>
+                  
           <div>
-          <input type="button" value="분해하기" onclick="item2();" />
+            <button onclick="createDiv()"><img src="src/img/경코젬.png" alt="" width="50px" ></button>
+            <input id="op2" type="text" size="2" maxlength="2"/>
           </div>
-          <div class="speech-bubble" id="box2">
-            <div style="padding-top: 25px;">
-            스킬코어 분해시 얻는 조각수: <input id="result4" type="text" size="2" readonly /> <br />
-            얻은 조각으로 제작 가능한 코어 젬스톤: <input id="result5" type="text" size="2" readonly /> <br />
-            코어젬스톤을 제작하고 남은 조각수: <input id="result6" type="text" size="2" readonly />
-            </div>
-          </div>
-        </div>
+
+           <div style="text-align: center;">
+            <input type="button" value="분해하기" class="bt" onclick="item2();"  style="text-align: center; position: relative;
+                  top: 180px;"/>
+                  </div>
+
+                  <div class="speech-bubble" id="box2">
+                    <div style="padding-top: 25px;">
+                    스킬코어 분해시 얻는 조각수: <input id="result4" type="text" size="2" readonly /> <br />
+                    얻은 조각으로 제작 가능한 코어 젬스톤: <input id="result5" type="text" size="2" readonly /> <br />
+                    코어젬스톤을 제작하고 남은 조각수: <input id="result6" type="text" size="2" readonly />
+                    </div>
+                  </div>
+                </div>
 
 
-        <div id="tab3" data-tab-content class="items">
-          <div>
-            <h2>분해할려는 특수코어의 개수는?</h2>
-            <div style="text-align: center;">
-              <div style="text-align:center; margin-top: 20px;">
-              <img src="src/img/특수코어.jpg" alt="">
+                <div id="tab3" data-tab-content class="items">
+
+                  <div>
+                    <h2>분해할려는 특수코어의 개수는?</h2>
+                    <p>※최대 20개까지 입력가능</p>
+                    <div style="text-align: center;">
+                      <div style="text-align:center; margin-top: 20px;">
+                      <img src="src/img/특수코어.jpg" alt="">
+                      </div>
+                      <input id="op3" type="text" size="2" maxlength="2"> 개 <br />
+                      <input type="button" value="분해하기" class="bt" onclick="item3();" />
+                    </div>
+                  </div>
+
+                  <div class="speech-bubble" id="box3" style="position:relative; top:120px" >
+                    <div style="padding: 25px">
+                    특수코어 분해시 얻는 조각수: <input type="text" id="result7" size="2" readonly> <br />
+                    얻은 조각으로 제작 가능한 코어 젬스톤: <input id="result8" type="text" size="2" readonly /> <br />
+                    코어젬스톤을 제작하고 남은 조각수: <input id="result9" type="text" size="2" readonly /> <br />
+                    </div>
+                  </div>
+                  
+                </div>
               </div>
-              <input id="op3" type="text" size="2" maxlength="2"> 개 <br />
-              <input type="button" value="분해하기" onclick="item3();" />
-            </div>
-          </div>
-          <div class="speech-bubble" id="box3" style="position:relative; top:120px" >
-            <div style="padding: 25px">
-            특수코어 분해시 얻는 조각수: <input type="text" id="result7" size="2" readonly> <br />
-            얻은 조각으로 제작 가능한 코어 젬스톤: <input id="result8" type="text" size="2" readonly /> <br />
-            코어젬스톤을 제작하고 남은 조각수: <input id="result9" type="text" size="2" readonly /> <br />
-            </div>
-          </div>
-        </div>
-      </div>
-      </div>
-
-
-
-      <script src="src/index.js"></script>
-
-      <footer>
+              </div>
+            
+              <script src="src/index.js"></script>
+    <!-- content -->
+    <!-- footer -->
+      <footer class="ft">
         <div class="ft-item1">
           코젬분해기© Copyright 2022, All Rights Reserved <br />
           인천광역시 부평구 부개로12 | 오상추(주) <br />
-          010-6415-4735, <a href="mailto:ohsangchu@naver.com">ohsangchu@naver.com</a> | version : 1.01 <br />
+          010-6415-4735, <a href="mailto:ohsangchu@naver.com">ohsangchu@naver.com</a> | version : 1.01 <br>
         </div>
 
         <div class="ft-item2">
@@ -118,5 +138,7 @@
         </div>
 
       </footer>
+      <!-- footer -->
+    </div>
 </body>
 </html>
